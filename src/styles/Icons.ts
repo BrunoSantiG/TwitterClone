@@ -11,3 +11,4 @@ export { Chat, Hashtag } from 'styled-icons/heroicons-outline';
 export { Retweet } from 'styled-icons/evil';
 export { Twitter } from 'styled-icons/boxicons-logos';
 export { HomeCircle } from 'styled-icons/boxicons-regular';
+export { ArrowIosDownwardOutline } from 'styled-icons/evaicons-outline';

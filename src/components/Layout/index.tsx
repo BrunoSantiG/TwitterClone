@@ -4,6 +4,7 @@ import { Container, Wrapper } from './styles';
 import MenuBar from '../MenuBar';
 
 const Layout: React.FC = () => {
+	document.title = 'Página Inicial / Twitter';
 	return (
 		<Container>
 			<Wrapper>

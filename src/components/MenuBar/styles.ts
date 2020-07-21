@@ -7,8 +7,9 @@ import {
 	Twitter,
 	Hashtag,
 	Person,
+	ArrowIosDownwardOutline as ArrowDown,
 } from '../../styles/Icons';
-
+// Div´s
 export const Container = styled.div`
 	display: none;
 
@@ -34,11 +35,39 @@ export const Topside = styled.div`
 		align-items: flex-start;
 	}
 `;
-export const Logo = styled(Twitter)`
-	width: 41px;
-	height: 41px;
-	fill: var(--white);
+
+export const Bottomside = styled.div`
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 25px;
+	padding: 8.25px;
+	&:hover {
+		background: var(--twitter-dark-hover);
+	}
 `;
+export const Avatar = styled.div`
+	width: 39px;
+	height: 39px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: var(--gray);
+	cursor: pointer;
+`;
+export const ProfileData = styled.div`
+	display: none;
+	@media (min-width: 1280px) {
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		> span {
+			color: var(--gray);
+		}
+		cursor: pointer;
+	}
+`;
+
+// Button
 export const MenuButton = styled.button`
 	display: flex;
 	align-items: center;
@@ -96,12 +125,20 @@ export const MenuButton = styled.button`
 	}
 `;
 
+// Icons
+
 const iconCSS = css`
 	flex-shrink: 0;
 	width: 30px;
 	height: 30px;
 
 	color: var(--white);
+`;
+
+export const Logo = styled(Twitter)`
+	width: 41px;
+	height: 41px;
+	fill: var(--white);
 `;
 
 export const HomeIcon = styled(HomeCircle)`
@@ -118,4 +155,16 @@ export const ExploreIcon = styled(Hashtag)`
 `;
 export const ProfileIcon = styled(Person)`
 	${iconCSS}
+`;
+
+export const ArrowDownIcon = styled(ArrowDown)`
+	display: none;
+	@media (min-width: 1280px) {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		color: var(--white);
+		margin-left: 30px;
+		cursor: pointer;
+	}
 `;
