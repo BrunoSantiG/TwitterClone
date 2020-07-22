@@ -8,6 +8,12 @@ export const Container = styled.div`
 	padding: 14px 16px;
 	border-bottom: 1px solid var(--outline);
 	max-width: 100%;
+
+	@media (max-width: 499px) {
+		&:nth-last-child(1) {
+			margin-bottom: 47px;
+		}
+	}
 `;
 
 export const Retweeted = styled.div`

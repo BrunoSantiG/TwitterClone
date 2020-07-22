@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import {
 	ArrowLeft,
-	Home,
+	HomeCircle,
 	Search,
 	Notifications,
 	Email,
@@ -95,7 +95,7 @@ const iconCSS = css`
 	}
 `;
 
-export const HomeIcon = styled(Home)`
+export const HomeIcon = styled(HomeCircle)`
 	${iconCSS}
 `;
 export const SearchIcon = styled(Search)`
