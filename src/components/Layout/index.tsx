@@ -1,7 +1,10 @@
 import React from 'react';
+
 import Main from '../Main';
-import { Container, Wrapper } from './styles';
 import MenuBar from '../MenuBar';
+import SideBar from '../SideBar';
+
+import { Container, Wrapper } from './styles';
 
 const Layout: React.FC = () => {
 	document.title = 'Página Inicial / Twitter';
@@ -10,7 +13,7 @@ const Layout: React.FC = () => {
 			<Wrapper>
 				<MenuBar />
 				<Main />
-				{/* <SideBar /> */}
+				<SideBar />
 			</Wrapper>
 		</Container>
 	);
