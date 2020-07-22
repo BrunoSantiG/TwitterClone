@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { Container, SearchWrapper, SearchBar, SearchIcon } from './styles';
+import {
+	Container,
+	SearchWrapper,
+	SearchBar,
+	SearchIcon,
+	Body,
+} from './styles';
+import List from '../List';
 
 const SideBar: React.FC = () => {
 	return (
@@ -9,6 +16,9 @@ const SideBar: React.FC = () => {
 				<SearchBar placeholder="Buscar no Twitter" />
 				<SearchIcon />
 			</SearchWrapper>
+			<Body>
+				<List title="Quem seguir" elements={[]} />
+			</Body>
 		</Container>
 	);
 };

@@ -4,17 +4,16 @@ import { Search } from '../../styles/Icons';
 
 export const Container = styled.div`
 	display: none;
-
 	@media (min-width: 1000px) {
 		display: flex;
 		flex-direction: column;
-		width: min(339px, 100%);
+		width: min(399px, 100%);
 	}
 `;
 
 export const SearchWrapper = styled.div`
 	padding: 10px 24px;
-	width: min(339px, 100%);
+	width: min(399px, 100%);
 	position: fixed;
 	top: 0;
 	z-index: 2;
@@ -29,7 +28,6 @@ export const SearchBar = styled.input`
 	padding: 0 10px 0 52px;
 	border-radius: 19.5px;
 	background: var(--search);
-
 	&::placeholder {
 		color: var(--gray);
 	}
@@ -38,12 +36,9 @@ export const SearchBar = styled.input`
 		top: -33px;
 		left: 15px;
 		z-index: 1;
-
 		transition: 180ms ease-in-out;
 	}
-
 	outline: 0;
-
 	&:focus {
 		border: 1px solid var(--twitter);
 		~ svg {
@@ -56,4 +51,11 @@ export const SearchIcon = styled(Search)`
 	width: 27px;
 	height: 27px;
 	fill: var(--gray);
+`;
+
+export const Body = styled.div`
+	display: flex;
+	flex-direction: column;
+	padding: 57px 24px 200px;
+	margin-top: 3px;
 `;
